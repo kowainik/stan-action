@@ -1,5 +1,4 @@
 #!/bin/sh -l
 
-echo "Hello $1"
-time=$(date)
-echo "::set-output name=time::$time"
+curl -L https://github.com/kowainik/stan/releases/latest/download/stan-0.0.1.0-Linux-ghc-8.8.3 --output stan
+echo "::add-path::$(pwd)/stan"
