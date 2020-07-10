@@ -6,3 +6,4 @@ curl --silent -L https://github.com/kowainik/stan/releases/latest/download/stan-
 
 echo "Pwd: $(pwd)"
 echo "::set-output name=stanPath::$(pwd)/stan"
+echo "::add-path::$(pwd)/stan"
