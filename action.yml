@@ -8,13 +8,14 @@ inputs:
     required: true
     default: 'World'
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  stanPath:
+    description: 'Path to Stan inside Docker container'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
+# post-entrypoint: 'copy_release.sh'
 
 branding:
   color: yellow
