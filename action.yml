@@ -1,5 +1,5 @@
 # action.yml
-name: 'Stan'
+name: 'haskell-stan'
 author: "Kowainik — Veronika Romashkina, Dmitrii Kovanikov"
 description: 'Haskell Static Analyser'
 inputs:
