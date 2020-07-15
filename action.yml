@@ -15,7 +15,10 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
-# post-entrypoint: 'copy_release.sh'
+
+  pre-entrypoint: 'setup.sh'
+  env:
+    TEST_ENV: '1234'
 
 branding:
   color: yellow
